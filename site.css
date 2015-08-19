@@ -1,0 +1,103 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: rgba(19, 103, 145, 1);
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+button {
+	border: none;
+	font-size: 2em;
+	border-radius: 5px;
+}
+
+button.active {
+	background-color: #4FD633;
+}
+
+#timerWrapper {
+	-webkit-box-flex: 0 0 auto;
+	-moz-box-flex:  0 0 auto;
+	-webkit-flex:  0 0 auto;
+	-ms-flex:  0 0 auto;
+	flex:  0 0 auto;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.timer {
+	width: 300px;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 10px;
+
+	text-align: center;
+}
+
+.timer button {
+	padding: 10px;
+	font-weight: bold;
+	width: 70%;
+}
+
+.timer h1 {
+	font-size: 4em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	margin: 15px 0;
+}
+
+.reset > button {
+	background-color: #E0D55A;
+	margin-top: 10px;
+	width: 200px;
+}
+
+@media (max-width: 767px) {
+	#timerWrapper {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+
+	#timerWrapper div:nth-of-type(1) {
+		margin-bottom: 10px;
+	}
+
+	.reset button {
+		width: 300px;
+	}
+
+}
+
+@media (min-width: 768px){
+	#timerWrapper div:nth-of-type(1) {
+		margin-right: 5px;
+	}
+
+	#timerWrapper div:nth-of-type(2) {
+		margin-left: 5px;
+	}
+}
